@@ -1,0 +1,227 @@
+/* Global Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    background-color: #0b192c !important;
+}
+
+.navbar-brand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #ffffff;
+    transition: none;
+}
+
+.navbar-brand:hover {
+    color: #ffffff !important;
+    text-decoration: none;
+    pointer-events: none;
+}
+
+.nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #FF6500;
+}
+
+/* Hero Section */
+#home {
+    background: linear-gradient(rgba(255,255,255,0.9), rgba(255,255,255,0.9)), url('hospital-bg.jpg');
+    background-size: cover;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+#home h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 1.5rem;
+}
+
+#home .lead {
+    font-size: 1.5rem;
+    color: #666;
+}
+
+/* Products Section */
+#products .card {
+    transition: transform 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.1);
+}
+
+#products .card:hover {
+    transform: translateY(-5px);
+}
+
+#products .card-title {
+    color: #333;
+    font-weight: bold;
+}
+
+#products .card-text {
+    color: #666;
+}
+
+/* Services Section */
+#services h4 {
+    color: #333;
+    margin-bottom: 1rem;
+}
+
+#services p {
+    color: #666;
+}
+
+/* About Section */
+#about p {
+    font-size: 1.1rem;
+    color: #555;
+    line-height: 1.8;
+}
+
+/* Contact Section */
+#contact .form-control {
+    border-radius: 0;
+    margin-bottom: 1rem;
+    padding: 0.8rem;
+}
+
+#contact .form-control:focus {
+    box-shadow: none;
+    border-color: #007bff;
+}
+
+#contact .btn-primary {
+    background-color: #007bff;
+    border: none;
+    padding: 0.8rem 2rem;
+    border-radius: 0;
+    transition: background-color 0.3s ease;
+}
+
+#contact .btn-primary:hover {
+    background-color: #0056b3;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+}
+
+footer p {
+    margin-bottom: 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #home h1 {
+        font-size: 2.5rem;
+    }
+    
+    #home .lead {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+}
+
+/* Animation Durations */
+.animate__animated {
+    animation-duration: 1s;
+}
+
+/* AOS Animation */
+[data-aos] {
+    transition-duration: 1000ms;
+}
+
+.search-input {
+    color: white; /* Text color inside the input */
+    background-color: transparent; /* Ensure background is transparent */
+    border: 1px solid; /* Keep the border style */
+}
+
+.search-input::placeholder {
+    color: gray; /* Faded gray color for the placeholder text */
+}
+
+.search-icon {
+    color: gray; /* Faded gray color for the magnifying glass icon */
+}
+
+.navbar-nav .nav-link.active {
+    color: #FF6500; /* Match hover color */
+}
+
+.btn-explore {
+    background-color: transparent; /* No filled color */
+    border: 2px solid #0b192c; /* Border color same as navbar background */
+    color: #0b192c; /* Initial text color */
+    transition: all 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.btn-explore:hover {
+    background-color: #0b192c; /* Keep the same background on hover */
+    color: #fff; /* Change text color to white on hover */
+    border: 2px solid #0b192c; /* Keep the border color same as background */
+    transform: scale(1.05); /* Slightly expand the button */
+}
+
+/* Adjust navigation buttons visibility and position to the extreme sides */
+.carousel-control-prev,
+.carousel-control-next {
+    width: 8%; /* Adjust width to make it more visible */
+    background: rgba(0, 0, 0, 0.5); /* Add a slight background for visibility */
+    color: #fff; /* Ensure the arrows are visible */
+}
+
+.carousel-control-prev {
+    left: -2%; /* Position prev button to the extreme left */
+}
+
+.carousel-control-next {
+    right: -2%; /* Position next button to the extreme right */
+}
+
+/* Adjust indicator positioning below carousel */
+.carousel-indicators {
+    bottom: -60px; /* Push indicators further below */
+}
+
+/* Default blue color for all indicators */
+.carousel-indicators button {
+    background-color: #0b192c; /* Set to blue */
+    opacity: 0.7;
+    transition: background-color 0.3s, opacity 0.3s;
+}
+
+/* Active dot color as orange */
+.carousel-indicators .active {
+    background-color: #FF6500; /* Active dot turns orange */
+    opacity: 1; /* Make active dot fully opaque */
+    transition: background-color 0.3s, opacity 0.3s; /* Add transition for smooth color change */
+}
+/* Remove the default background and color the arrow icons */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: transparent; /* Remove background color */
+    background-image: none; /* Clear default arrow image */
+    border: none; /* Remove any border */
+    width: 30px; /* Adjust size as needed */
+    height: 30px;
+}
+
